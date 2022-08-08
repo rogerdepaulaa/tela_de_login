@@ -5,6 +5,11 @@
     list-style: none;
     border: none;
     font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+body * {
+    box-sizing: border-box;
+    
 }
 
 .main-login{
@@ -53,6 +58,11 @@
     color: #00ff88;
     font-weight: bold;
 }
+
+.img-login{
+    width: 40vw;
+}
+
 .text-field{
     display: flex;
     width: 100%;
@@ -96,4 +106,32 @@
     color: #2b134b;
     background: #00ff88;
     box-shadow: 0 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width:1000px){
+    .card-login{
+        width: 85%;
+        margin: 0 40px 0 0;
+    }    
+}
+
+@media only screen and (max-width: 800px) {
+    .main-login{
+        flex-direction: column;
+    }
+    .img-login{
+        display: none;
+    }
+    .left-login,.right-login {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card-login{
+        width: 90%;
+        margin: 0 20px;
+    }
 }
